@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ObiWan from "/src/app/HelloThere.jpg"
+import ObiWan from "/src/app/assets/images/HelloThere.jpg"
 import Link from "next/link";
 
 export default function About() {
@@ -8,7 +8,7 @@ export default function About() {
             <h1>HELLO THERE</h1>
             <Image
                 src={ObiWan}
-                alt="Next.js Logo"
+                alt="Kenobi"
                 height={300}
                 width={600}
                 priority

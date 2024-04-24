@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'mixins';
+
+.footer {
+    position: relative;
+    padding: 32px 0 36px;
+    background: $dark;
+    margin-top: auto;
+    color: $text-light;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.headings {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.link {
+    color: $text-light;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    width: 112px;
+    height: 52px;
+}
+
+.phone {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+
+    &>a {
+        margin-bottom: 6px;
+        @include h4-title;
+        color: $white-color;
+        transition: $transition;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+
+    &>span {
+        @include desc-text;
+        color: $white-color;
+    }
+}
+
+.linksRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    gap: 30px;
+}
+
+.linksColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: auto;
+}
+
+.followAndSubscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.contactsTextField {
+    width: 207px;
+    height: 36px;
+    
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.copyright {
+    margin: 20px;
+    color: $text-light;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    transition: $transition;
+}
