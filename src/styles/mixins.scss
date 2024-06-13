@@ -3,7 +3,7 @@
 @mixin h1-title {
   color: $black-color;
   font-size: 72px;
-  font-family: $font-alegreya;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 900;
   line-height: 90px;
@@ -14,7 +14,7 @@
 @mixin h2-title {
   color: $black-color;
   font-size: 52px;
-  font-family: $font-alegreya;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 900;
   line-height: 65px;
@@ -24,7 +24,7 @@
 @mixin h3-title {
   color: $black-color;
   font-size: 32px;
-  font-family: $font-alegreya;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 800;
   line-height: 40px;
@@ -33,7 +33,7 @@
 @mixin h4-title {
   color: $black-color;
   font-size: 24px;
-  font-family: $font-alegreya;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 800;
   line-height: 30px;
@@ -42,7 +42,7 @@
 @mixin accent {
   color: $black-color;
   font-size: 24px;
-  font-family: $font-roboto;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
@@ -51,7 +51,7 @@
 @mixin p-text {
   color: $black-color;
   font-size: 14px;
-  font-family: $font-roboto;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
@@ -60,7 +60,7 @@
 @mixin desc-text {
   color: $desc-color;
   font-size: 12px;
-  font-family: $font-roboto;
+  font-family: $font-lato;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;

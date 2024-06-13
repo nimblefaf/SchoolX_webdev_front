@@ -1,7 +1,7 @@
 import '@/styles/index.scss';
 
-import { Alegreya } from 'next/font/google';
 import { Roboto } from 'next/font/google';
+import { Lato } from 'next/font/google';
 
 import type { Metadata } from "next";
 
@@ -9,9 +9,10 @@ import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import ReactQueryProvider from "@/app/providers/react-query";
 
-const alegreya = Alegreya({
-    subsets: ['cyrillic'],
-    variable: '--font-alegreya',
+const lato = Lato({
+    subsets: ['latin'],
+    weight: '400',
+    variable: '--font-lato',
     display: 'swap',
 });
 
@@ -21,6 +22,8 @@ const roboto = Roboto({
     variable: '--font-roboto',
     display: 'swap',
 });
+
+
 
 export const metadata: Metadata = {
     title: "Интернет Магазин",
@@ -33,7 +36,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html lang="ru" className={`${alegreya.variable} ${roboto.variable}`}>
+        <html lang="ru" className={`${lato.variable} ${roboto.variable}`}>
             <body className="wrapper">
                 <ReactQueryProvider>
                     <Header />

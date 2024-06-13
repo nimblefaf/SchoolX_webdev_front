@@ -5,7 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 40px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: $box-shadow;
 
@@ -29,6 +29,9 @@
             margin-bottom: 6px;
             text-align: center;
             transition: $transition;
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
         &Text {
@@ -38,28 +41,26 @@
         }
 
         &Price {
-            margin-bottom: 12px;
             color: $black-color;
-            font-family: $font-roboto;
-            font-size: 24px;
+            font-family: $font-lato;
+            font-size: 12px;
             font-style: normal;
             font-weight: 700;
-            line-height: 30px;
-            text-align: center; 
+            text-align: left; 
         }
 
         &BuyBtn {
             position: relative;
             z-index: 1;
-            width: 100%;
-            padding: 14px 0;
+            width: 55px;
+            padding: 7px 0;
             border: none;
             border-radius: 5px;
             background: $primary;
             color: $white-color;
             cursor: pointer;
-            font-family: $font-alegreya;
-            font-size: 18px;
+            font-family: $font-lato;
+            font-size: 9px;
             font-style: normal;
             font-weight: 900;
             letter-spacing: 1px;
@@ -73,5 +74,14 @@
             }
         }
 
+    }
+    &Bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        gap: 20px;
     }
 }

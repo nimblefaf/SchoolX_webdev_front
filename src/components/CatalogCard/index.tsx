@@ -1,7 +1,8 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
-import ItemPlaceholderImage from '@/app/assets/images/AngrySparrow.png'
+import ItemPlaceholderImage from '@/app/assets/images/sad_cpu.jpg'
 import styles from './CatalogCard.module.scss';
 
 export default function CatalogCard() {
@@ -17,10 +18,10 @@ export default function CatalogCard() {
             </div>
 
             <div className={styles.cardDesc}>
-                <span className={styles.cardDescName}>Название</span>
+                <Link href="/" className={styles.cardDescName}>Название</Link>
                 <span className={styles.cardDescText}>Описание</span>
 
-                <div>
+                <div className={styles.cardBottom}>
                     <span className={styles.cardDescPrice}>3500 руб.</span>
                     <button className={styles.cardDescBuyBtn}>КУПИТЬ</button>
                 </div>

@@ -18,35 +18,13 @@ export default function Catalog() {
     return (
         <div className="container">
             <section className={styles.catalog}>
-
-                
-                <button onClick={() => setState(state - 1)}>-</button>
-                <div>{state}</div>
-                <button onClick={() => setState(state + 1)}>+</button>
-
-
-                <ul className={styles.catalogCategory}>
-                    <li
-                        className={clsx(styles.catalogCategoryItem, categoryId === 0 && styles.active)}
-                        onClick={() => setCategoryId(0)}
-                    >Топ продаж</li>
-                    {/* <li className={styles.catalogCategoryItem}>Острые</li>
-                    <li className={styles.catalogCategoryItem}>Мясные</li>
-                    <li className={styles.catalogCategoryItem}>Сырные</li>
-                    <li className={styles.catalogCategoryItem}>Веганские</li> */}
-                    
-                    {data?.map(category => (
-                        <li
-                            key={category.id}
-                            className={clsx(styles.catalogCategoryItem, categoryId === category.id && styles.active)}
-                            onClick={() => setCategoryId(category.id)}
-                        >
-                            {category.name}
-                        </li>
-                    ))}
-                </ul>
+                <h2>Топ продаж</h2>
 
                 <div className={styles.catalogGrid}>
+                    <CatalogCard />
+                    <CatalogCard />
+                    <CatalogCard />
+                    <CatalogCard />
                     <CatalogCard />
                     <CatalogCard />
                     <CatalogCard />
